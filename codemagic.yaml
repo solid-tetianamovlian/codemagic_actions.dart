@@ -1,5 +1,12 @@
 workflows:
   pr-checks:
+    triggering:
+      events:
+        - pull_request
+      branch_patterns:
+        - pattern: '*'
+          include: true
+          source: true
     name: Pull Request Checks
     instance_type: mac_mini_m2
     scripts:      
