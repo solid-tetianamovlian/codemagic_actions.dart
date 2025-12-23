@@ -1,0 +1,7 @@
+workflows:
+  pr-checks:
+    name: Pull Request Checks
+    instance_type: mac_mini_m2
+    scripts:      
+      - name: Run
+        script: echo "Run test"
